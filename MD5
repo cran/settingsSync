@@ -1,0 +1,17 @@
+26176f64a3a98afe0906c26212d52c3a *DESCRIPTION
+93ce645bd9e6148e410c6cd82a76ba97 *NAMESPACE
+d8c78bdd9e779866207f8c7634f45401 *NEWS.md
+85c75c16ee5aa654507d8c902633d41a *R/mimic.R
+ccd4f9b9a4dfccac00354e70af51c1e6 *R/sync.R
+3528ca018fe9f29111111ddd10071f77 *R/utils.R
+cd5e7e18b018131025bf3f61bedcc9f2 *README.md
+4f67b9426118493af3ab306408b7804a *inst/WORDLIST
+ad1b8dabcfdf243f38c737932b129fdb *inst/rstudio/addins.dcf
+fdb339e099d6de9a9dfd87785158c92b *man/mimic-on-off.Rd
+eb4d83412bb7bebf0d77ed4c8680d6e0 *man/pull.Rd
+4044ead26a5cde3b17580784f4f33a32 *man/push.Rd
+5933c9a1e9a3461d1db1475cbc762c9c *man/read_from_gd.Rd
+be436901b71a1d7fd96508c8a06c24d3 *man/read_from_local.Rd
+6b38322b651200817d2ad5c746a692f1 *man/rstudio_path.Rd
+dda953a4f632af8aead33adddb54137d *man/sync.Rd
+afde0501956f90bbbfe04e39effc0920 *tests/spelling.R
