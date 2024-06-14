@@ -42,7 +42,12 @@ mimic_off <- function() {
 #' @describeIn mimic-on-off Check if mimic is on
 #' @export
 is_mimic_on <- \() {
-  getOption("ss.mimic") |> as.logical()
+  opt <- getOption("ss.mimic")
+  # this is necessary because NULL |> as.logical() returns length 0, not FALSE
+  if (is.null(opt)) {
+    return(FALSE)
+  }
+  opt |> as.logical()
 }
 
 
@@ -122,9 +127,9 @@ gd <- list(
       if (tibble::is_tibble(file)) {
         file <- file.path(get_mimic_folder_gd(), file$path)
       }
-      return(read_file(file))
+      return(read_file(file, encoding))
     } else {
-      googledrive::drive_read_string(file, ...)
+      googledrive::drive_read_string(file, encoding = encoding, ...)
     }
   }
 )
